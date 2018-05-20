@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>ジェイ・ケイコーポレーション</title>
+<title>不動産業者向け 無料ホームページテンプレート tp_fudosan12</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="お住い、宿泊、レンタルスペースの事ならお任せください！">
-<meta name="keywords" content="小倉,賃貸,売買,民泊,貸事務所,レンタルスペース">
-<link rel="stylesheet" href="css/slide.css">
+<meta name="description" content="ここにサイト説明を入れます">
+<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/openclose.js"></script>
 <!--[if lt IE 9]>
@@ -16,14 +15,14 @@
 <![endif]-->
 </head>
 
-<body>
+<body class="s-n">
 
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="エポックハウス"></a></h1>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="サンプル不動産"></a></h1>
 <div id="contact">
-<p class="tel">TEL:093-551-6633<span>受付：9:00〜18:00　定休日：水曜日</span></p>
+<p class="tel">TEL:00-0000-0000<span>受付：00:00〜00:00　定休日：水曜日</span></p>
 </div>
 </header>
 
@@ -33,8 +32,8 @@
 <li><a href="index.html">ホーム<span>HOME</span></a></li>
 <li><a href="baibai.html">売買物件<span>BAIBAI</span></a></li>
 <li><a href="chintai.html">賃貸物件<span>CHINTAI</span></a></li>
-<li><a href="vacation_rental.html">民泊物件<span>VACATION RENTAL</span></a></li>
-<li><a href="rental_space.html">レンタルスペース<span>SPACE</span></a></li>
+<li><a href="tenant.html">テナント<span>TENANT</span></a></li>
+<li><a href="parking.html">駐車場<span>PARKING</span></a></li>
 <li><a href="contact.html">お問い合わせ<span>CONTACT</span></a></li>
 </ul>
 </nav>
@@ -47,30 +46,26 @@
 <li><a href="index.html">ホーム<span>HOME</span></a></li>
 <li><a href="baibai.html">売買物件<span>BAIBAI</span></a></li>
 <li><a href="chintai.html">賃貸物件<span>CHINTAI</span></a></li>
-<li><a href="vacation_rental.html">民泊物件<span>VACATION RENTAL</span></a></li>
-<li><a href="rental_space.html">レンタルスペース<span>SPACE </span></a></li>
+<li><a href="tenant.html">テナント<span>TENANT</span></a></li>
+<li><a href="parking.html">駐車場<span>PARKING</span></a></li>
 <li><a href="contact.html">お問い合わせ<span>CONTACT</span></a></li>
 </ul>
 </nav>
 
-<!--メインイメージ-->
-<aside id="mainimg">
-<img src="images/1.jpg" alt="" id="slide0">
-<img src="images/1.jpg" alt="" id="slide1">
-<img src="images/2.jpg" alt="" id="slide2">
-<img src="images/3.jpg" alt="" id="slide3">
-</aside>
-
 <div id="main">
 
-<section id="new">
-<h2 id="newinfo_hdr" class="close">更新情報・お知らせ</h2>
-<dl id="newinfo">
-<dt>2018/6/15</dt>
-<dd>Webサイトをリニューアルしました！<span class="newicon">NEW</span></dd>
-<!-- <dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd> -->
-</dl>
+<section>
+
+<h2>送信完了</h2>
+
+<!-- フォームの情報はここからです -->
+<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
+<input type="hidden" name="mode" value="finish" />
+<!-- 処理終了 -->
+<p class="c">送信が完了しました。</p>
+</form>
+<!-- フォームの情報はここまでです -->
+
 </section>
 
 </div>
@@ -78,7 +73,19 @@
 
 <div id="sub">
 
-<!-- <section>
+<nav class="box1">
+<h2>Menu</h2>
+<ul class="submenu">
+<li><a href="index.html">ホーム</a></li>
+<li><a href="company.html">会社概要</a></li>
+<li><a href="link.html">リンク</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+</ul>
+</nav>
+
+<section>
 
 <h2>おすすめ物件情報</h2>
 
@@ -128,12 +135,17 @@
 </a>
 </div>
 
-</section> -->
+</section>
+
+<div class="box1">
+<h2>この見出しはh2タグです</h2>
+<p>このボックスは、class="box1"と指定すれば出ます。</p>
+</div>
 
 <h2>Access</h2>
 <div class="box1">
-<strong>TEL:093-551-6633</strong><br>
-<span class="mini1">受付：9:00〜18:00<br>
+<strong>TEL:00-0000-0000</strong><br>
+<span class="mini1">受付：00:00〜00:00<br>
 定休日：水曜日</span>
 </div>
 
@@ -145,26 +157,51 @@
 <footer>
 
 <div id="footermenu">
-	<ul>
-	<li><a href="#">ホーム</a></li>
-	</ul>
-	<ul>
-	<li><a href="baibai.html">売買物件</a></li>
-	</ul>
-	<ul>
-	<li><a href="chintai.html">賃貸物件</a></li>
-	</ul>
-	<ul>
-	<li><a href="vacation_rental.html">民泊物件</a></li>
-	</ul>
-	<ul>
-	<li><a href="rental_space.html">レンタルスペース</a></li>
-	</ul>
+<ul>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+<ul>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+<ul>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+<ul>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+<ul>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
 </div>
 <!--/footermenu-->
 
 <div id="copyright">
-<small>Copyright&copy; <a href="index.html">株式会社ジェイ・ケイコーポレーション</a> All Rights Reserved.</small>
+<small>Copyright&copy; <a href="index.html">サンプル不動産</a> All Rights Reserved.</small>
 <span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
 </div>
 
